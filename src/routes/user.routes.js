@@ -1,8 +1,18 @@
+// import { Router } from "express";
+// import { registerUser } from "../controllers/user.controller.js";
+
+// const router = Router()
+
+// router.route("/register").post(registerUser)
+
+// export default Router
+
+
 import { Router } from "express";
 import { registerUser } from "../controllers/user.controller.js";
 
-const router = Router()
+const router = Router();
 
-router.route("/register").post(registerUser)
+router.route("/register").post(registerUser);
 
-export default Router
+export default router; // Correctly export the router instance
